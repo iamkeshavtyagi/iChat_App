@@ -37,3 +37,6 @@ append(`${name} joined the chat`,'right');
 socket.on('receive',data =>{
     append(`${data.name}: ${data.message} `,'left');
     })
+socket.on('left', Name =>{
+        append(`${data.Name} left the chat`,'right')
+    })
